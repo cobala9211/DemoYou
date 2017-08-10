@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_drawable"
+        android:background="@color/pink_500">
+
+        <ImageView
+            android:layout_width="@dimen/layout_70"
+            android:layout_height="@dimen/layout_70"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/layout_10"
+            android:background="@color/white"
+            android:contentDescription="@string/hello_world"
+            android:padding="@dimen/layout_3"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvTitleApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/layout_10"
+            android:layout_marginRight="@dimen/layout_10"
+            android:layout_marginTop="@dimen/layout_50"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_25"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVersionApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvTitleApp"
+            android:layout_marginEnd="@dimen/layout_10"
+            android:layout_marginRight="@dimen/layout_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvVersionApp"
+            android:layout_marginEnd="@dimen/layout_10"
+            android:layout_marginRight="@dimen/layout_10"
+            android:text="@string/copyright"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvDrawerList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="true"
+        android:clipToPadding="false"
+        android:divider="@color/gray"
+        android:dividerHeight="@dimen/layout_1"
+        android:drawSelectorOnTop="true"
+        android:overScrollMode="always" />
+
+    <include layout="@layout/frame_adview" />
+
+</LinearLayout>

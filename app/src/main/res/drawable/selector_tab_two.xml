@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:dither="true">
+    <item android:drawable="@drawable/ic_stars_pink_500_24dp" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_stars_pink_500_24dp" android:state_selected="true" />
+    <item android:drawable="@drawable/ic_stars_grey_500_24dp" />
+</selector>

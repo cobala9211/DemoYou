@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flMainUi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgReplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/ic_replay_grey_500_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/connect_error"
+            android:textColor="@color/gray"
+            android:layout_below="@+id/imgReplay"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <!-- Movie Thumbnail -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_5" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <FrameLayout
+            android:id="@+id/flAdViewTmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- DraggableView -->
+    <com.github.pedrovgs.DraggableView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/draggable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        draggable_view:bottom_view_id="@+id/llThumb"
+        draggable_view:enable_minimized_horizontal_alpha_effect="false"
+        draggable_view:top_view_height="@dimen/top_fragment_height"
+        draggable_view:top_view_id="@+id/rlVideoview"
+        draggable_view:top_view_margin_bottom="@dimen/top_fragment_margin_bottom"
+        draggable_view:top_view_margin_right="@dimen/top_fragment_margin_right"
+        draggable_view:top_view_resize="true"
+        draggable_view:top_view_x_scale_factor="@dimen/x_scale_factor"
+        draggable_view:top_view_y_scale_factor="@dimen/y_scale_factor">
+
+        <LinearLayout
+            android:id="@+id/llThumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dragView"
+            android:orientation="vertical">
+            <!-- Video Thumbnail -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <include layout="@layout/frame_adview" />
+        </LinearLayout>
+        <!-- VideoView -->
+        <RelativeLayout
+            android:id="@+id/rlVideoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@color/black">
+
+            <VideoView
+                android:id="@+id/videoSurface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ProgressBar
+                android:id="@+id/progressBarLoadVideo"
+                style="?android:attr/progressBarStyleInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+    </com.github.pedrovgs.DraggableView>
+</FrameLayout>

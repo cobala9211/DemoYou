@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbarSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_15"
+        android:layout_marginLeft="@dimen/layout_15"
+        android:layout_marginRight="@dimen/layout_15"
+        android:layout_marginStart="@dimen/layout_15"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/layout_20"
+            android:layout_marginRight="@dimen/layout_20"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/edittext.text.hint"
+            android:padding="@dimen/margin_5"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <ImageView
+            android:id="@+id/imgClearSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/hello_world"
+            android:gravity="center_vertical"
+            android:background="@drawable/selectorbutton"
+            android:src="@drawable/ic_clear_black_24dp" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/imgBackabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectorbutton"
+            android:contentDescription="@string/hello_world"
+            android:padding="@dimen/layout_10"
+            android:src="@drawable/ic_keyboard_backspace_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_20" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_20"
+            android:drawableLeft="@drawable/ic_star_rate_grey_500_18dp"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableStart="@drawable/ic_star_rate_grey_500_18dp"
+            android:text="@string/rate_review"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMoreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:drawableLeft="@drawable/ic_expand_more_grey_500_18dp"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableStart="@drawable/ic_expand_more_grey_500_18dp"
+            android:text="@string/more_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <include layout="@layout/frame_adview" />
+</LinearLayout>

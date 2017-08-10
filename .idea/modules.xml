@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/draggablepanels/draggablepanels.iml" filepath="$PROJECT_DIR$/draggablepanels/draggablepanels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huongta-kidsongs-92322c34c2fe.iml" filepath="$PROJECT_DIR$/huongta-kidsongs-92322c34c2fe.iml" />
+    </modules>
+  </component>
+</project>

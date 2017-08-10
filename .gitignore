@@ -1,0 +1,15 @@
+build/intermediates/dex-cache/cache.xml
+build/intermediates/gradle_project_sync_data.bin
+.idea/workspace.xml
+.idea/misc.xml
+.gradle/2.4/taskArtifacts/taskArtifacts.bin
+.gradle/2.4/taskArtifacts/outputFileStates.bin
+.gradle/2.4/taskArtifacts/fileSnapshots.bin
+.gradle/2.4/taskArtifacts/fileHashes.bin
+.gradle/2.4/taskArtifacts/cache.properties.lock
+draggablepanels/build/outputs/aar/draggablepanels-release.aar
+draggablepanels/build/outputs/aar/draggablepanels-debug.aar
+draggablepanels/build/intermediates/bundles/release/classes.jar
+draggablepanels/build/intermediates/bundles/debug/classes.jar
+KidSongNews.iml
+.idea/encodings.xml

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMainDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_row"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/layout_20"
+    android:paddingLeft="@dimen/layout_10"
+    android:paddingRight="@dimen/layout_10"
+    android:paddingTop="@dimen/layout_20">
+
+
+    <TextView
+        android:id="@+id/tvTitleDrawer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textsize_15"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/hello_world" />
+
+
+</LinearLayout>
